@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.card {
+    max-width: 500px;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+
+    .cardHeader {
+        background-color: #f2cf82;
+        padding: 30px;
+
+        &>h1 {
+            color: #856110;
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+
+    .cardBody {
+        background-color: #fefefe;
+        padding: 30px;
+    }
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &>label {
+        margin-bottom: 5px;
+        color: #979797;
+        font-size: 12px;
+    }
+
+    &>input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #e8e8e8;
+
+        &:focus {
+            border-color: #f2cf82;
+            outline: none;
+        }
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4184f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: auto;
+    display: block;
+
+    &:hover {
+        background-color: #005bb5;
+    }
+
+    &:focus {
+        outline:  1px solid #002850;
+    }
+}
+
+.outputWrapper{
+    margin-top: 20px;
+    background-color: #e8e8e8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .outputLabel {
+        color: #6c6c6c;
+        font-size: 12px;
+    }
+
+    .output {
+        color: #070707;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

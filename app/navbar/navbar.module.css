@@ -1,0 +1,88 @@
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+    text-decoration: none;
+}
+
+.linksWrapper {
+    display: flex;
+    gap: 25px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 25px;
+
+    &>a {
+        text-decoration: none;
+        color: #555;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.search {
+    display: block;
+
+    &>input{
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 13px;
+        width: 300px;
+    }
+}
+
+.navIcon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    fill: #515151;
+}
+
+.navbarRight{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #ddd;
+    }
+
+    .navLinks.show {
+        display: flex;
+        padding: 20px;
+        box-shadow: 0 2px 2px #f0f0f0;
+    }
+
+    .navIcon {
+        display: flex;
+    }
+
+    .search{
+        display: none;
+    }
+}
